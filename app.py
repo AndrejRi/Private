@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Path to your local Excel file
-file_path = 'C:/Users/Andrej/Desktop/Chatbot_data/tablice_streamlit.xlsx'
+file_path = 'tablice_streamlit.xlsx'
 
 # Read the Excel file
 df = pd.read_excel(file_path, engine='openpyxl')
