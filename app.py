@@ -45,10 +45,10 @@ if date_filter:
     filtered_df = filtered_df[filtered_df['Datum'] == pd.to_datetime(date_filter)]
 
 if season_filter:
-    filtered_df = filtered_df[filtered_df['Oznaka'].isin(season_filter)]
+    filtered_df = filtered_df[filtered_df['Prvenstvo'].isin(season_filter)]
 
 if round_filter:
-    filtered_df = filtered_df[filtered_df['Oznaka'].isin(round_filter)]
+    filtered_df = filtered_df[filtered_df['Kolo'].isin(round_filter)]
 
 if team_filter:
     filtered_df = filtered_df[filtered_df['Utakmica'].isin(team_filter)]
