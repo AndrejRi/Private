@@ -61,9 +61,9 @@ if end_result_filter:
 filtered_df = filtered_df[(filtered_df['GF'] >= goals_for_filter[0]) & (filtered_df['GF'] <= goals_for_filter[1])]
 filtered_df = filtered_df[(filtered_df['GA'] >= goals_against_filter[0]) & (filtered_df['GA'] <= goals_against_filter[1])]
 
-# Conditional formatting: color green for cells in 'Rezultat' column that contain 'W'
+# Conditional formatting: color green for cells in 'Rezultat' column that contain 'p'
 def highlight_w(val):
-    color = 'green' if val == 'W' else ''
+    color = 'green' if val == 'p' else ''
     return f'background-color: {color}'
 
 # Apply conditional formatting to the 'Rezultat' column
